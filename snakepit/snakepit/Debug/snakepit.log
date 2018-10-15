@@ -1,0 +1,24 @@
+﻿Build started 1/13/2015 8:28:47 PM.
+     1>Project "C:\Users\Lincoln\Dropbox\Homework\CS 32\snakepit\snakepit\snakepit.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp History.cpp Pit.cpp Player.cpp Snake.cpp main.cpp
+         Pit.cpp
+     1>c:\users\lincoln\dropbox\homework\cs 32\snakepit\snakepit\pit.cpp(11): error C2512: 'History' : no appropriate default constructor available
+         History.cpp
+     1>c:\users\lincoln\dropbox\homework\cs 32\snakepit\snakepit\history.cpp(12): error C2065: 'm_pit' : undeclared identifier
+     1>c:\users\lincoln\dropbox\homework\cs 32\snakepit\snakepit\history.cpp(12): error C2227: left of '->destroyOneSnake' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+         Generating Code...
+         Compiling...
+         Game.cpp
+         Generating Code...
+         Compiling...
+         main.cpp
+         Snake.cpp
+         Player.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\Lincoln\Dropbox\Homework\CS 32\snakepit\snakepit\snakepit.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.16

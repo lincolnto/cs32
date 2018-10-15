@@ -1,0 +1,47 @@
+1. There is a problem with my decompressor class that does not decompress the string correctly and provides an incorrect message.
+
+2. As far as I am aware, my classes satisfy the big-o requirements.
+
+3.
+set()
+	Compute the hash for the key
+	If Key is not already in table
+		Return false if max capacity is reached
+		If pointer at hash value is nullptr
+			Allocate a new node at that hash value
+			Initialize the key, value, etc for that node
+			Increase curCapacity (number of items currently stored)
+			If it isn't permanent, increase number of nonpermanent items
+				Add to top of list of nonpermanent items
+			Return true
+		Else
+			Find the last value in the linked list at that hash value
+			Allocate a new node at the end of the linked list
+			Initialize key, value, etc
+			If it isn't permanent, increase number of nonpermanent items
+				Add to top of list of nonperm items
+			Return true
+	Else (key alredy in table)
+		Touch the key
+		Find the node with that key and update the value
+		Return true
+		
+touch()
+	Find the key in the list of nonpermanent items
+	Create a temp node and set it to the touched node
+	Store the value of the position of that node
+	Shift all recents from the top to that position back one
+	Set the temp node to the top of the recents list
+	Return true
+	
+	If value wasn't found, return false
+	
+discard()
+	If there are no nonpermanent items, return false
+	Set a node pointer equal to the last recently touched item
+	Set key to its key and value to its value
+	Adjust pointers in the linked list to remove it
+	Delete the node
+	Decrement curCapacity and nonpermanentitems
+	Return true;
+	
